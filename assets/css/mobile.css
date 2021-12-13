@@ -1,0 +1,11 @@
+@media (max-width: 768px){
+    body {
+        background: url(/assets/image/home/background-home-tablet.jpg) no-repeat;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background: url(/assets/image/home/background-home-mobile.jpg) no-repeat;
+    }
+}
