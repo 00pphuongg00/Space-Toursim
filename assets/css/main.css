@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    background: url(/assets/image/home/background-home-desktop.jpg) no-repeat;
+    background: url(../image/home/background-home-desktop.jpg) no-repeat;
 }
 
 header {
