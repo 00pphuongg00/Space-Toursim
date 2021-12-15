@@ -60,7 +60,7 @@ header .navigation > ul > li > a {
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--white);
+    color:  var(--white);
     font-size: 20px;
     padding: 30px 0;
 }
