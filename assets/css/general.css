@@ -1,9 +1,4 @@
-header #menu-bar {
-    color: #fff;
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
-}
+
 
 /* LOADING WEBSITE START */
 .loader-container
@@ -76,3 +71,9 @@ header #menu-bar {
     }
 }
 
+header .fas {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}

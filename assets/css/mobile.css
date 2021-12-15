@@ -1,11 +1,252 @@
-@media (max-width: 768px){
-    body {
-        background: url(../image/home/background-home-tablet.jpg) no-repeat;
+@media screen and (max-width: 991px) {
+    header {
+        padding: 1rem 2rem;
     }
-}
 
-@media (max-width: 450px) {
-    body {
-        background: url(../image/home/background-home-mobile.jpg) no-repeat;
+    header .logo {
+        width: 70px;
+    }
+
+    header .navigation {
+        background: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(1.5rem);
+        position: absolute;
+        display: block;
+        width: 70%;
+        z-index: 100;
+        height: 100vh;
+        top: 0; right: 0;
+        display: none;
+    }
+
+    header .navigation > ul  {
+        text-align: left;
+        align-items: center;
+        padding: 3rem 2rem;
+    }
+
+    header .navigation > ul > li {
+        padding: 2rem 0rem;
+        display: block;
+    }
+
+    header .navigation > ul > li > a {
+        font-size: 1.3rem;
+    }
+
+    header .navigation > ul > li > a::after {
+        display: none;
+    }
+
+    header #menu-bar {
+        text-align: center;
+        align-items: center;
+        display: block;
+        color: var(--white);
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    header .navigation #close-bar {
+        display: block;
+        color: var(--white);
+        font-size: 2rem;
+        text-align: right;
+    }
+
+
+    /* HOME START */
+
+    .home {
+        background: url(../image/home/background-home-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 165vh;  
+        display: block;
+    }
+
+    .home .home-container {
+        display: flex;
+        text-align: center;
+        padding: 0rem 9rem;
+    }
+
+    .home .home-container .home-content {
+        padding: 0;
+    }
+
+    .home .home-container .home-content h1 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .home .home-container .home-content h1 > span {
+        color: var(--white);
+        font-size: 8rem;
+    }
+
+    .home .home-container .home-content p {
+        color: var(--white);
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .home .btn-explore {
+        padding-top: 2rem;
+    }
+
+    .home .btn-explore > a {
+        font-size: 3rem;
+    }
+
+    /* HOME END */
+
+    /* DESTINATION START */
+
+    .destination {
+        background: url(../image/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        height: 190vh;
+    }
+
+    .desti-container {
+        padding: 5rem 2rem;
+        display: block;
+    }
+
+    .desti-container > h1 {
+        text-align: left;
+    }
+
+    .desti-container > h1 >span {
+        margin: 0;
+        color: rgba(255, 255, 255, .4);
+    }
+
+    .desti-container .tab-list {
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .desti-container .tab-list button {
+        font-size: 1.5rem;
+    }
+
+    .desti-container .desti-images {
+        margin: 2rem 0;
+    }
+
+    .desti-container .desti-images picture {
+        margin-bottom: 5rem;
+    }
+
+    .desti-container .desti-images picture img {
+        max-width: 50%;
+    }
+
+    .desti-container .desti-contents {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .desti-container .desti-contents .desti-content {
+        padding: 0 5rem;
+        font-weight: 300;
+        font-family: "Bellefair", serif;
+    }
+
+    .desti-container .desti-contents
+     .desti-content .desti-info {
+        display: block;
+        justify-content: center;
+    }
+
+    .desti-container .desti-contents .desti-content h1 {
+        font-size: 3rem;
+    }
+
+    .desti-container .desti-content .desti-info .info-box span {
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 1.5;
+        font-family: "Bellefair", serif;
+    }
+
+    /* DESTINATION END */
+
+    /* CREW START */
+    .crew {
+        background: url(../image/crew/background-crew-desktop.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+
+    .crew .glide__slides .glide__slide .content {
+        display: block;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img {
+        display: block;
+        width: 100%;
+        padding: 4rem 3rem;
+        text-align: center;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img h1 {
+        font-size: 1.3rem;
+        margin-bottom: 2.5em;
+        letter-spacing: 3px;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img h1 span {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img .slider {
+         text-align: center;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img .slider .content-slider {
+        padding: 0 5rem;
+    }
+
+    .crew > .glide__slides > .glide__slide >
+    .content > .title-img > .slider > .content-slider > h1 {
+        font-size: 2rem;
+        color: var(--white);
+        margin-bottom: 1rem;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .title-img .slider .content-slider p {
+        font-size: 2rem;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .wrapper-slider {
+        margin: 0;
+        display: block !important;
+        text-align: center;
+    }
+
+    .crew .glide__slides .glide__slide
+    .content .wrapper-slider img {
+        width: 50%;
     }
 }

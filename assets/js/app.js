@@ -4,15 +4,15 @@ new WOW().init();
 
 // LOADER WEB START
 
-function loader(){
-  document.querySelector('.loader-container').classList.add('fade-out');
-}
+// function loader(){
+//   document.querySelector('.loader-container').classList.add('fade-out');
+// }
 
-function fadeOut(){
-  setInterval(loader, 3500);
-}
+// function fadeOut(){
+//   setInterval(loader, 3500);
+// }
 
-window.onload = fadeOut;
+// window.onload = fadeOut;
 
 // LOADER WEB END
 
@@ -32,14 +32,15 @@ $(document).ready(function(){
   });
 });
 
+// autoplay: {
+//   delay: 5200,
+//   disableOnInteraction: false,
+// },
 
 var swiper = new Swiper(".glide__slides", {
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-    delay: 5200,
-    disableOnInteraction: false,
-  },
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -89,7 +90,16 @@ const techContents = $$$$$('.technology-body');
  });
 
 
+let navigations = document.getElementById("navigation");
+let showMenu = document.getElementById("menu-bar");
+let hideMenu = document.getElementById("close-bar");
 
+showMenu.onclick = function() {
+  navigations.style.display = "block";
+}
+hideMenu.onclick = function() {
+  navigations.style.display = "none";
+}
 
 
 

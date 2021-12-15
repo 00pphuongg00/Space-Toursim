@@ -28,98 +28,84 @@ html {
     width: 0;
 }
 
-body {
-    background: url(../image/home/background-home-desktop.jpg) no-repeat;
-}
-
 header {
+    padding: 2rem 0 5% 5%;
     display: flex;
-    padding: 1rem 0 0 4%;
-    text-align: center;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
 }
 
 header .logo {
+    align-items: center;
+    text-align: center;
     width: 65px;
-    cursor: pointer;
-    filter: invert(1);
 }
-
-header hr {
-    width: 33%;
-    left: 12%;
-    position: absolute;
-    border: none;
-    border-bottom: 1px solid rgb(128 128 128 / 50%);
-    z-index: 4;
-}
-
 
 header .navigation {
-    display: block;
-    margin: 1rem 0;
-    position: relative;
-    backdrop-filter: blur(1.5rem);
-    background: rgba(255,255,255,.1);
+    padding: 0;
+    text-align: right;
+    padding: 35px 40px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, .1);
 }
 
-header .navigation > ul {
-    display: block;
-    padding: 2.1rem 4.1rem;
+header .navigation > ul > li {
+    display: inline-block;
+    margin: 0 1rem;
+    position: relative;
 }
 
-header .navigation > ul > a {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: rgb(255 255 255);
-    font-weight: 300;
-    position: relative;
-    padding: 2.3rem 0;
-    margin: 0 1.5rem;
-    letter-spacing: 2px;
+header .navigation > ul > li > a {
+    font-family: 'Bellefair', serif;
     text-transform: uppercase;
-    font-size: 1.23rem;
+    letter-spacing: 1px;
+    color: var(--white);
+    font-size: 20px;
+    padding: 30px 0;
 }
 
-header .navigation > ul > a::after {
+header .navigation > ul > li > a > span {
+    margin-right: .4rem;
+}
+
+header .navigation > ul > li > a::after {
     content: '';
     position: absolute;
     height: 3px; width: 0;
     background: var(--white);
-    bottom: 0; left: 0;
+    bottom: -35px; left: 0;
     transition: 0.25s cubic-bezier(.1, .1, .1, .1);
 }
 
-header .navigation > ul a.active::after {
+header .navigation > ul > li > a.active::after {
     width: 100%;
 }
 
-header .navigation > ul:hover a.active::after {
+header .navigation > ul > li > a:hover::after {
+    width: 100%;
+}
+
+header .navigation > ul:hover > li > a.active::after {
     width: 0;
 }
 
-header .navigation > ul a.active:hover::after {
+header .navigation > ul > li > a.active:hover::after {
     width: 100%;
-}
-
-header .navigation > ul > a:hover::after {
-    width: 100%;
-}
-
-header .navigation > ul > a > span {
-    letter-spacing: 1px;
-    font-weight: 300;
-    margin-right: .3rem;
-    font-size: 1.2rem;
 }
 
 /* MAIN START */
 .home {
-    min-height: 100vh;
-    padding: 4.8rem 5%;
+    background-image: url(../image/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -12.5rem;
+    padding: 15rem 5%;
+    height: 102vh;
     display: grid;
-    /* grid-template-columns: 630px 500px; */
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .home .home-container {
@@ -202,8 +188,12 @@ header .navigation > ul > a > span {
 /* DESTINATION START */
 
 .destination {
-    min-height: 100vh;
-    background: url(../image/destination/background-destination-desktop.jpg) no-repeat;
+    height: 100vh;
+    /* background: url(../image/destination/background-destination-desktop.jpg) no-repeat; */
+    background: url(../image/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: 4;
 }
 
